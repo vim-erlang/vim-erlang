@@ -1,0 +1,4 @@
+test/fixture/rebar3_app/mylib/_build
+test/fixture/rebar3_app/mylib/rebar.lock
+test/fixture/rebar3_release/myapp/_build
+test/fixture/rebar3_release/myapp/rebar.lock
