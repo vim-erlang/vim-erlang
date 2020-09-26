@@ -3,6 +3,27 @@
 This is a repository for the common documentation and tests of the vim-erlang
 repositories.
 
+## Tests
+
+Use `make` to run the tests:
+
+```
+$ make test
+git submodule update --init
+Submodule 'vim-erlang-tags' (git@github.com:vim-erlang/vim-erlang-tags.git) registered for path 'vim-erlang-tags'
+Cloning into '.../vim-erlang/vim-erlang-tags'...
+Submodule path 'vim-erlang-tags': checked out 'd84dd4026b3bdba88d6ec35ad0ecfeca9c80afc7'
+test/run-tests.sh
+test/evaluate-test.sh
+-> Tests passed.
+```
+
+The tested vim-erlang projects are downloaded as git submodules.
+
+`test.sh` executes the tests and places their results in the `test/result`
+directory. The expected results are checked in. If the content changes (i.e.,
+the tests produce a result other than the expected result), then the test fails.
+
 ## FAQ
 
 ### Which repositories are maintained?
@@ -13,6 +34,11 @@ The following vim-erlang repositories are maintained:
 - [vim-erlang-compiler](https://github.com/vim-erlang/vim-erlang-compiler)
 - [vim-erlang-omnicomplete](https://github.com/vim-erlang/vim-erlang-omnicomplete)
 - [vim-erlang-tags](https://github.com/vim-erlang/vim-erlang-tags)
+
+
+### Why is no proper test framework used?
+
+To keep it simple.
 
 ## Contributing
 

@@ -1,0 +1,15 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted/
+?SERVER	apps/myapp/src/myapp_sup.erl	/^-\s\*define\s\*(\?\s\*SERVER\>/;"	d	file:
+SERVER	apps/myapp/src/myapp_sup.erl	/^-\s\*define\s\*(\?\s\*SERVER\>/;"	d	file:
+init	apps/myapp/src/myapp_sup.erl	/^init\>/;"	f	file:
+myapp_app	apps/myapp/src/myapp_app.erl	1;"	M
+myapp_app.erl	apps/myapp/src/myapp_app.erl	1;"	F
+myapp_app:start	apps/myapp/src/myapp_app.erl	/^start\>/;"	f
+myapp_app:stop	apps/myapp/src/myapp_app.erl	/^stop\>/;"	f
+myapp_sup	apps/myapp/src/myapp_sup.erl	1;"	M
+myapp_sup.erl	apps/myapp/src/myapp_sup.erl	1;"	F
+myapp_sup:init	apps/myapp/src/myapp_sup.erl	/^init\>/;"	f
+myapp_sup:start_link	apps/myapp/src/myapp_sup.erl	/^start_link\>/;"	f
+start	apps/myapp/src/myapp_app.erl	/^start\>/;"	f	file:
+start_link	apps/myapp/src/myapp_sup.erl	/^start_link\>/;"	f	file:
+stop	apps/myapp/src/myapp_app.erl	/^stop\>/;"	f	file:

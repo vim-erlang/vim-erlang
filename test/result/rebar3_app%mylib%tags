@@ -1,0 +1,38 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted/
+#my_rec_erl	src/mylib_app.erl	/^-\s\*record\s\*(\?\s\*my_rec_erl\>/;"	r	file:
+#my_rec_erl	src/mylib_sup.erl	/^-\s\*record\s\*(\?\s\*my_rec_erl\>/;"	r	file:
+#my_rec_hrl	src/mylib_app.hrl	/^-\s\*record\s\*(\?\s\*my_rec_hrl\>/;"	r
+?MY_MACRO_ERL	src/mylib_app.erl	/^-\s\*define\s\*(\?\s\*MY_MACRO_ERL\>/;"	d	file:
+?MY_MACRO_ERL	src/mylib_sup.erl	/^-\s\*define\s\*(\?\s\*MY_MACRO_ERL\>/;"	d	file:
+?MY_MACRO_HRL	src/mylib_app.hrl	/^-\s\*define\s\*(\?\s\*MY_MACRO_HRL\>/;"	d
+?SERVER	src/mylib_sup.erl	/^-\s\*define\s\*(\?\s\*SERVER\>/;"	d	file:
+MY_MACRO_ERL	src/mylib_app.erl	/^-\s\*define\s\*(\?\s\*MY_MACRO_ERL\>/;"	d	file:
+MY_MACRO_ERL	src/mylib_sup.erl	/^-\s\*define\s\*(\?\s\*MY_MACRO_ERL\>/;"	d	file:
+MY_MACRO_HRL	src/mylib_app.hrl	/^-\s\*define\s\*(\?\s\*MY_MACRO_HRL\>/;"	d
+SERVER	src/mylib_sup.erl	/^-\s\*define\s\*(\?\s\*SERVER\>/;"	d	file:
+f	src/mylib_app.erl	/^f\>/;"	f	file:
+f	src/mylib_sup.erl	/^f\>/;"	f	file:
+init	src/mylib_sup.erl	/^init\>/;"	f	file:
+my_rec_erl	src/mylib_app.erl	/^-\s\*record\s\*(\?\s\*my_rec_erl\>/;"	r	file:
+my_rec_erl	src/mylib_app.erl	/^-\s\*type\s\*my_rec_erl\>/;"	t	file:
+my_rec_erl	src/mylib_sup.erl	/^-\s\*record\s\*(\?\s\*my_rec_erl\>/;"	r	file:
+my_rec_erl	src/mylib_sup.erl	/^-\s\*type\s\*my_rec_erl\>/;"	t	file:
+my_rec_hrl	src/mylib_app.hrl	/^-\s\*record\s\*(\?\s\*my_rec_hrl\>/;"	r
+my_rec_hrl	src/mylib_app.hrl	/^-\s\*type\s\*my_rec_hrl\>/;"	t	file:
+mylib_app	src/mylib_app.erl	1;"	M
+mylib_app.erl	src/mylib_app.erl	1;"	F
+mylib_app.hrl	src/mylib_app.hrl	1;"	F
+mylib_app:f	src/mylib_app.erl	/^f\>/;"	f
+mylib_app:my_rec_erl	src/mylib_app.erl	/^-\s\*type\s\*my_rec_erl\>/;"	t
+mylib_app:my_rec_hrl	src/mylib_app.hrl	/^-\s\*type\s\*my_rec_hrl\>/;"	t
+mylib_app:start	src/mylib_app.erl	/^start\>/;"	f
+mylib_app:stop	src/mylib_app.erl	/^stop\>/;"	f
+mylib_sup	src/mylib_sup.erl	1;"	M
+mylib_sup.erl	src/mylib_sup.erl	1;"	F
+mylib_sup:f	src/mylib_sup.erl	/^f\>/;"	f
+mylib_sup:init	src/mylib_sup.erl	/^init\>/;"	f
+mylib_sup:my_rec_erl	src/mylib_sup.erl	/^-\s\*type\s\*my_rec_erl\>/;"	t
+mylib_sup:start_link	src/mylib_sup.erl	/^start_link\>/;"	f
+start	src/mylib_app.erl	/^start\>/;"	f	file:
+start_link	src/mylib_sup.erl	/^start_link\>/;"	f	file:
+stop	src/mylib_app.erl	/^stop\>/;"	f	file:

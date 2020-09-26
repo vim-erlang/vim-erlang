@@ -4,8 +4,13 @@
 %%%-------------------------------------------------------------------
 
 -module(mylib_sup).
-
 -behaviour(supervisor).
+
+-define(MY_MACRO_ERL, 1).
+
+-record(my_rec_erl, {}).
+
+-type my_rec_erl() :: #my_rec_erl{}.
 
 -export([start_link/0]).
 
@@ -26,6 +31,7 @@ start_link() ->
 %%                  type => worker(),       % optional
 %%                  modules => modules()}   % optional
 init([]) ->
+    f(?MY_MACRO_ERL),
     SupFlags = #{strategy => one_for_all,
                  intensity => 0,
                  period => 1},
@@ -33,3 +39,7 @@ init([]) ->
     {ok, {SupFlags, ChildSpecs}}.
 
 %% internal functions
+-spec f(_) -> Result when
+      Result :: my_rec_erl().
+f(_) ->
+    #my_rec_erl{}.
