@@ -1,15 +1,24 @@
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted/
+?MY_LIB_MACRO	apps/mylib/include/mylib.hrl	/^-\s\*define\s\*(\?\s\*MY_LIB_MACRO\>/;"	d
 ?SERVER	apps/myapp/src/myapp_sup.erl	/^-\s\*define\s\*(\?\s\*SERVER\>/;"	d	file:
+MY_LIB_MACRO	apps/mylib/include/mylib.hrl	/^-\s\*define\s\*(\?\s\*MY_LIB_MACRO\>/;"	d
 SERVER	apps/myapp/src/myapp_sup.erl	/^-\s\*define\s\*(\?\s\*SERVER\>/;"	d	file:
+f	apps/myapp/src/myapp_app.erl	/^f\>/;"	f	file:
+f	apps/mylib/src/mylib.erl	/^f\>/;"	f	file:
 init	apps/myapp/src/myapp_sup.erl	/^init\>/;"	f	file:
 myapp_app	apps/myapp/src/myapp_app.erl	1;"	M
 myapp_app.erl	apps/myapp/src/myapp_app.erl	1;"	F
+myapp_app:f	apps/myapp/src/myapp_app.erl	/^f\>/;"	f
 myapp_app:start	apps/myapp/src/myapp_app.erl	/^start\>/;"	f
 myapp_app:stop	apps/myapp/src/myapp_app.erl	/^stop\>/;"	f
 myapp_sup	apps/myapp/src/myapp_sup.erl	1;"	M
 myapp_sup.erl	apps/myapp/src/myapp_sup.erl	1;"	F
 myapp_sup:init	apps/myapp/src/myapp_sup.erl	/^init\>/;"	f
 myapp_sup:start_link	apps/myapp/src/myapp_sup.erl	/^start_link\>/;"	f
+mylib	apps/mylib/src/mylib.erl	1;"	M
+mylib.erl	apps/mylib/src/mylib.erl	1;"	F
+mylib.hrl	apps/mylib/include/mylib.hrl	1;"	F
+mylib:f	apps/mylib/src/mylib.erl	/^f\>/;"	f
 start	apps/myapp/src/myapp_app.erl	/^start\>/;"	f	file:
 start_link	apps/myapp/src/myapp_sup.erl	/^start_link\>/;"	f	file:
 stop	apps/myapp/src/myapp_app.erl	/^stop\>/;"	f	file:

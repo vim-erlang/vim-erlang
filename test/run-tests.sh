@@ -26,6 +26,15 @@ function vim-erlang-tags
 }
 
 #-------------------------------------------------------------------------------
+# Preparation
+#-------------------------------------------------------------------------------
+
+# Compile the project: both vim-erlang-compiler and vim-erlang-omnicomplete
+# need at least one "rebar3 compile".
+(cd "${fixture_dir}/rebar3_app/mylib"; rebar3 compile)
+(cd "${fixture_dir}/rebar3_release/myapp"; rebar3 compile)
+
+#-------------------------------------------------------------------------------
 # vim-erlang-compiler
 #-------------------------------------------------------------------------------
 
@@ -54,15 +63,19 @@ echo "Testing vim-erlang-tags..."
 # Test that symbolic links are not followed without the "--follow" option.
 
 (cd "${fixture_dir}/rebar3_release"
- vim-erlang-tags --output "${result_dir}/rebar3_release%tags-no-follow")
+ vim-erlang-tags \
+     --ignore "*/_build" \
+     --output "${result_dir}/rebar3_release%tags-no-follow")
 
 # Test that symbolic links are followed with the "--follow" option.
 
 (cd "${fixture_dir}/rebar3_release"
- vim-erlang-tags --output "${result_dir}/rebar3_release%tags-follow" --follow)
+ vim-erlang-tags \
+     --ignore "*/_build" \
+     --output "${result_dir}/rebar3_release%tags-follow" --follow)
 
 # Test a rebar release.
 
 (cd "${fixture_dir}/rebar3_release/myapp"
- vim-erlang-tags
+ vim-erlang-tags --ignore _build
  mv tags "${result_dir}/rebar3_release%myapp%tags")
