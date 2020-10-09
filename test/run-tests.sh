@@ -26,6 +26,20 @@ function vim-erlang-tags
 }
 
 #-------------------------------------------------------------------------------
+# vim-erlang-compiler
+#-------------------------------------------------------------------------------
+
+echo "Testing vim-erlang-compiler..."
+
+# Compile every *.erl file.
+#
+# This includes the fixtures and the vim-erlang scripts.
+ 
+for src_file in $(find -type f -name '*.erl'); do
+    "$main_dir/vim-erlang-compiler/compiler/erlang_check.erl" "${src_file}"
+done
+
+#-------------------------------------------------------------------------------
 # vim-erlang-tags
 #-------------------------------------------------------------------------------
 
