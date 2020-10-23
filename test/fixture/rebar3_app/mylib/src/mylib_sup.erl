@@ -41,5 +41,7 @@ init([]) ->
 %% internal functions
 -spec f(_) -> Result when
       Result :: my_rec_erl().
+f(x) ->
+    #my_rec_erl{};
 f(_) ->
     #my_rec_erl{}.
