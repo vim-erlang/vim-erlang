@@ -50,6 +50,28 @@ To keep it simple.
 
 *   **The order of the functions should be top-down.**
 
+    The "Utility functions" block constitute an exception to this rule, since
+    they are mostly independent from each other, and it wouldn't be too helpful
+    for their order to reflect the order in which they are used in the business
+    logic. So they are ordered alphabetically.
+
+    Example for top-down ordering:
+
+    ```
+    f() ->
+        g(),
+        h().
+
+    g() ->
+       gg().
+
+    gg() ->
+        ok.
+
+    h() ->
+        ok.
+    ```
+
 *   **Don't write lines longer than 80 characters.**
 
     Except if there is a very good reason (such as a long URL).
