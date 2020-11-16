@@ -48,6 +48,8 @@ To keep it simple.
     Conventions](http://www.erlang.se/doc/programming_rules.shtml) where
     sensible/possible.
 
+*   Follow the existing style in the code and commit messages.
+
 *   **The order of the functions should be top-down.**
 
     The "Utility functions" block constitute an exception to this rule, since
