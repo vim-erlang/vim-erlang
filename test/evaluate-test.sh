@@ -12,7 +12,7 @@ TEST_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 MAIN_DIR="$( dirname "$TEST_DIR" )"
 cd "${MAIN_DIR}"
 
-if [ "$(git status -s | grep " test/result/" | wc -l)" != 0 ]; then
+if [ "$(git status -s | grep " test/result/")" != "" ]; then
     echo
     echo "-> Test failed. The following file(s) changed:"
     echo
