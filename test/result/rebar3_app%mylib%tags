@@ -10,6 +10,9 @@ MY_MACRO_ERL	src/mylib_app.erl	/^-\s\*define\s\*(\?\s\*MY_MACRO_ERL\>/;"	d	file:
 MY_MACRO_ERL	src/mylib_sup.erl	/^-\s\*define\s\*(\?\s\*MY_MACRO_ERL\>/;"	d	file:
 MY_MACRO_HRL	src/mylib_app.hrl	/^-\s\*define\s\*(\?\s\*MY_MACRO_HRL\>/;"	d
 SERVER	src/mylib_sup.erl	/^-\s\*define\s\*(\?\s\*SERVER\>/;"	d	file:
+a.hrl	include/a.hrl	1;"	F
+b.hrl	src/b.hrl	1;"	F
+b.hrl	src/subdir/b.hrl	1;"	F
 f	src/mylib_app.erl	/^f\>/;"	f	file:
 f	src/mylib_sup.erl	/^f\>/;"	f	file:
 init	src/mylib_sup.erl	/^init\>/;"	f	file:
@@ -36,3 +39,5 @@ mylib_sup:start_link	src/mylib_sup.erl	/^start_link\>/;"	f
 start	src/mylib_app.erl	/^start\>/;"	f	file:
 start_link	src/mylib_sup.erl	/^start_link\>/;"	f	file:
 stop	src/mylib_app.erl	/^stop\>/;"	f	file:
+subdir_mod	src/subdir/subdir_mod.erl	1;"	M
+subdir_mod.erl	src/subdir/subdir_mod.erl	1;"	F
