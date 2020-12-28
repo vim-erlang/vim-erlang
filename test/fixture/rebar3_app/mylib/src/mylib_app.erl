@@ -16,6 +16,15 @@
 
 -export([start/2, stop/1]).
 
+%%------------------------------------------------------------------------------
+%% @doc Start the application.
+%% @end
+%%------------------------------------------------------------------------------
+-spec start(StartType, StartArgs) -> Result when
+      StartType :: application:start_type(),
+      StartArgs :: {any()},
+      Result :: {ok, any()} |
+                {error, Reason :: any()}.
 start(_StartType, _StartArgs) ->
     f(?MY_MACRO_HRL),
     mylib_sup:start_link().

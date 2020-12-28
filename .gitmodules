@@ -4,3 +4,6 @@
 [submodule "vim-erlang-compiler"]
 	path = vim-erlang-compiler
 	url = git@github.com:vim-erlang/vim-erlang-compiler.git
+[submodule "vim-erlang-omnicomplete"]
+	path = vim-erlang-omnicomplete
+	url = git@github.com:vim-erlang/vim-erlang-omnicomplete.git
