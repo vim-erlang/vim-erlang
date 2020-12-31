@@ -5,6 +5,8 @@
 # Usage:
 #
 #     test.sh
+#
+# Debugging: add "set -x" to enable bash's verbose mode.
 
 # http://redsymbol.net/articles/unofficial-bash-strict-mode/
 set -eu
@@ -78,7 +80,7 @@ echo "Testing vim-erlang-compiler..."
 # Compile every *.erl file.
 #
 # This includes the fixtures and the vim-erlang scripts.
- 
+
 for src_file in $(find . -type f -name '*.erl'); do
     "$main_dir/vim-erlang-compiler/compiler/erlang_check.erl" "${src_file}"
 done
@@ -89,8 +91,9 @@ done
 
 echo "Testing vim-erlang-omnicomplete..."
 
-# Test completion for every source directory. Every module is tried as a
-# completion target.
+# 1. Test completion for every source directory.
+#
+#    Every module is tried as a completion target.
 
 test-vim-erlang-omnicomplete \
     "${fixture_dir}/rebar3_app/mylib/src" \
@@ -106,6 +109,38 @@ test-vim-erlang-omnicomplete \
     "${fixture_dir}/rebar3_release/myapp/apps/myapp/src" \
     "${fixture_dir}/rebar3_release/myapp" \
     "rebar3_release%myapp"
+
+# 2. Test that the comments in my_complete.erl are accurate.
+
+expected_file=${fixture_dir}_expected
+actual_file="${result_dir}/rebar3_app%mylib%list-functions%my_complete"
+
+# Create ${expected_file}:
+#
+# - Go through "my_complete.erl"
+# - Don't print anything unless asked ("-n")
+# - Select the lines that start with "%     complete_"
+# - Remove the "%     " part from the beginning
+# - Print the rest to ${expected_file}
+sed -n '/^%     complete_/{s/^%     //;p}' \
+    "${fixture_dir}/rebar3_app/mylib/src/my_complete.erl" \
+    > "${expected_file}"
+
+# Temporarily disable "pipefail" because diff will have a non-zero exit status.
+set +o pipefail
+
+# Write the diff between the excepted and actual completion list into a diff
+# file.
+#
+# The first line of the diff is filtered out because it print information about
+# line numbers (which is only noise for us now).
+diff "${expected_file}" "${actual_file}" \
+    | tail +2 \
+    > "${result_dir}/my_complete-omnicomlete.diff"
+
+set -o pipefail
+
+rm "${expected_file}"
 
 #-------------------------------------------------------------------------------
 # vim-erlang-tags

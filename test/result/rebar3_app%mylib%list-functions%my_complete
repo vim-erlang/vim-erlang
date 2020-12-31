@@ -1,0 +1,36 @@
+complete_a1/0
+complete_a2/1
+complete_b1() -> integer()
+complete_b2(MyFloat) -> integer()
+complete_b3(MyFloat, MyInteger, MyTerm) -> integer()
+complete_b4(MyArg, X2, X3, X4, X5, Last) -> integer()
+complete_c1(MyFloat) -> integer()
+complete_c2(_MyFloat, _MyFloat, __MyTerm) -> integer()
+complete_c3(MyArg, MyArg, _MyArg, __MyArg, __MyArg, Last) -> integer()
+complete_d1() -> Result
+complete_d2(MyFloat) -> Result
+complete_d3(_MyFloat, _MyFloat, __MyTerm) -> Result
+complete_d4(MyArg, MyArg, _MyArg, __MyArg, __MyArg, Last) -> Result
+complete_e1/1
+complete_e2(MyFloat) -> integer()
+complete_e3(MyFloat) -> integer()
+complete_e4(MyFloat) -> Result
+complete_f1() -> integer()
+complete_f2(MyFloat) -> integer()
+complete_f3(MyFloat, MyInteger, MyTerm) -> integer()
+complete_f4(MyArg, X2, X3, X4, X5, Last) -> integer()
+complete_g1(MyFloat) -> integer()
+complete_g2(_MyFloat, _MyFloat, __MyTerm) -> integer()
+complete_g3(MyArg, MyArg, _MyArg, __MyArg, __MyArg, Last) -> integer()
+complete_h1() -> Result
+complete_h2(Arg) -> Result
+complete_h3(Arg1, Arg2, Arg3) -> Result
+complete_h4(Arg1, Arg2, Arg3, Arg4, Arg5, Arg6) -> Result
+complete_i1() -> {integer(), integer()}
+complete_i2(MyFloat) -> {integer(), integer()}
+complete_i3(MyFloat, MyInteger, MyTerm) -> {integer(), integer()}
+complete_i4(MyArg, X2, X3, X4, X5, Last) -> {integer(), integer()}
+complete_j1(MyOtherFloat) -> integer()
+complete_j2(X1, X2, X3) -> integer()
+module_info/0
+module_info/1
