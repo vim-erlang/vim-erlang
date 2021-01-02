@@ -122,7 +122,7 @@ actual_file="${result_dir}/rebar3_app%mylib%list-functions%my_complete"
 # - Select the lines that start with "%     complete_"
 # - Remove the "%     " part from the beginning
 # - Print the rest to ${expected_file}
-sed -n '/^%     complete_/{s/^%     //;p}' \
+sed -n '/^%     complete_/{s/^%     //;p;}' \
     "${fixture_dir}/rebar3_app/mylib/src/my_complete.erl" \
     > "${expected_file}"
 
