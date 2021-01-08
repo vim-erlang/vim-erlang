@@ -9,7 +9,9 @@ repositories.
 * [FAQ](#faq)
     * [Why is no proper test framework used?](#Why-is-no-proper-test-framework-used)
 * [Contributing](#contributing)
-    * [Coding conventions](#coding-conventions)
+    * [Markdown conventions](#markdown-conventions)
+    * [Vimscript coding conventions](#vimscript-coding-conventions)
+    * [Erlang coding conventions](#erlang-coding-conventions)
 
 ### Which repositories are maintained?
 
@@ -52,10 +54,31 @@ To keep it simple.
 
 ## Contributing
 
-### Coding conventions
+### Markdown conventions
 
-*   Follow Ericsson's [Programming Rules and
-    Conventions](http://www.erlang.se/doc/programming_rules.shtml) where
+*   Follow the style that already exists in the READMEs.
+
+### Vimscript coding conventions
+
+*   Follow the [Google Vimscript Style Guide][google-vimscript].
+
+*   **The order of the functions should be bottom-up.**
+
+    Reasoning: later code might want to use previous code, e.g.:
+
+    ```
+    function s:MyHelperFunction([...])
+        [...]
+    endfunction
+
+    if s:MyHelperFunction([...])
+        [...]
+    endif
+    ```
+
+### Erlang coding conventions
+
+*   Follow Ericsson's [Programming Rules and Conventions][ericsson-erlang] where
     sensible/possible.
 
 *   Follow the existing style in the code and commit messages.
@@ -124,3 +147,6 @@ To keep it simple.
     %%
     %% Optional further information.
     ```
+
+[google-vimscript]: https://google.github.io/styleguide/vimscriptguide.xml
+[ericsson-erlang]: http://www.erlang.se/doc/programming_rules.shtml
