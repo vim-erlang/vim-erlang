@@ -3,6 +3,16 @@
 This is a repository for the common documentation and tests of the vim-erlang
 repositories.
 
+## Table of Contents
+
+* [Tests](#tests)
+* [FAQ](#faq)
+    * [Why is no proper test framework used?](#Why-is-no-proper-test-framework-used)
+* [Contributing](#contributing)
+    * [Coding conventions](#coding-conventions)
+
+### Which repositories are maintained?
+
 ## Tests
 
 Use `make` to run the tests:
