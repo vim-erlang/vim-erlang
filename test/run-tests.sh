@@ -134,10 +134,10 @@ set +o pipefail
 # Write the diff between the excepted and actual completion list into a diff
 # file.
 #
-# The first line of the diff is filtered out because it print information about
-# line numbers (which is only noise for us now).
+# The lines starting with a number are filtered out because they print
+# information about line numbers (which is only noise for us now).
 diff "${expected_file}" "${actual_file}" \
-    | tail +2 \
+    | grep -v '^[0-9]' \
     > "${result_dir}/my_complete-omnicomlete.diff"
 
 set -o pipefail
