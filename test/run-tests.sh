@@ -35,6 +35,7 @@ function test-vim-erlang-omnicomplete
     base_dir=$1
     module_dir=$2
     result_prefix=$3
+    grep_pattern=$4
 
     echo "  - Directory ${base_dir}"
 
@@ -47,7 +48,7 @@ function test-vim-erlang-omnicomplete
     echo "    - list-modules"
     "$main_dir/vim-erlang-omnicomplete/autoload/erlang_complete.erl" \
         --basedir "${base_dir}" list-modules | \
-        grep "^my" \
+        grep "$grep_pattern" \
         > "${result_dir}/${result_prefix}%list-modules" || true
 
     # Run "erlang_complete.erl list-functions <module>".
@@ -105,17 +106,29 @@ echo "Testing vim-erlang-omnicomplete..."
 test-vim-erlang-omnicomplete \
     "${fixture_dir}/rebar3_app/mylib/src" \
     "${fixture_dir}/rebar3_app" \
-    "rebar3_app%mylib"
+    "rebar3_app%mylib" \
+    "^my"
 
 test-vim-erlang-omnicomplete \
     "${fixture_dir}/rebar3_release/myapp/apps/mylib/src" \
     "${fixture_dir}/rebar3_release/myapp" \
-    "rebar3_release%mylib"
+    "rebar3_release%mylib" \
+    "^my"
 
 test-vim-erlang-omnicomplete \
     "${fixture_dir}/rebar3_release/myapp/apps/myapp/src" \
     "${fixture_dir}/rebar3_release/myapp" \
-    "rebar3_release%myapp"
+    "rebar3_release%myapp" \
+    "^my"
+
+# We redirect the standard error to /dev/null because 
+# erlang_complete.erl would print "rebar.config consult failed" messages to the
+# standard error.
+test-vim-erlang-omnicomplete \
+    "${fixture_dir}/errors/rebar_config_error/src" \
+    "${fixture_dir}/errors/rebar_config_error" \
+    "errors%rebar_config_error" \
+    "" 2>/dev/null
 
 # 2. Test that the comments in my_complete.erl are accurate.
 
