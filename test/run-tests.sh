@@ -81,7 +81,9 @@ echo "Testing vim-erlang-compiler..."
 #
 # This includes the fixtures and the vim-erlang scripts.
 
-for src_file in $(find . -type f -name '*.erl'); do
+for src_file in $(find "${fixture_dir}/rebar3_app" \
+                       "${fixture_dir}/rebar3_release" \
+                       -type f -name '*.erl'); do
     "$main_dir/vim-erlang-compiler/compiler/erlang_check.erl" "${src_file}"
 done
 
