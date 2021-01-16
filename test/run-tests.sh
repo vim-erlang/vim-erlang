@@ -137,6 +137,12 @@ test-vim-erlang-omnicomplete \
     "errors%edoc_error" \
     "^my"
 
+module=no_such_module
+"$main_dir/vim-erlang-omnicomplete/autoload/erlang_complete.erl" \
+    --basedir "${fixture_dir}/rebar3_app/mylib/src" \
+    list-functions "${module}" \
+    > "${result_dir}/rebar3_app%mylib%list-functions%${module}" || true
+
 # 2. Test that the comments in my_complete.erl are accurate.
 
 expected_file=${fixture_dir}_expected
