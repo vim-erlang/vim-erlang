@@ -39,6 +39,11 @@ function test-vim-erlang-omnicomplete
     echo "  - Directory ${base_dir}"
 
     # Run "erlang_complete.erl list-modules".
+    #
+    # We filter for lines that start with "my" because we are not interested in
+    # the modules provided by Erlang/OTP. The list of Erlang/OTP modules
+    # depends on the Erlang/OTP installation, which would make the test
+    # nondeterministic.
     echo "    - list-modules"
     "$main_dir/vim-erlang-omnicomplete/autoload/erlang_complete.erl" \
         --basedir "${base_dir}" list-modules | \
