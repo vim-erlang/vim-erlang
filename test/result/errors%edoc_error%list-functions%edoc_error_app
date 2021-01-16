@@ -1,0 +1,2 @@
+test/fixture/errors/edoc_error/_build/default/lib/edoc_error/src/edoc_error_app.erl, in module header: at line 1: tag @spec not allowed here.
+Edoc error: error

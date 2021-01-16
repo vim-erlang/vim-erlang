@@ -76,6 +76,7 @@ function vim-erlang-tags
 # need at least one "rebar3 compile".
 (cd "${fixture_dir}/rebar3_app/mylib"; rebar3 compile)
 (cd "${fixture_dir}/rebar3_release/myapp"; rebar3 compile)
+(cd "${fixture_dir}/errors/edoc_error"; rebar3 compile)
 
 #-------------------------------------------------------------------------------
 # vim-erlang-compiler
@@ -129,6 +130,12 @@ test-vim-erlang-omnicomplete \
     "${fixture_dir}/errors/rebar_config_error" \
     "errors%rebar_config_error" \
     "" 2>/dev/null
+
+test-vim-erlang-omnicomplete \
+    "${fixture_dir}/errors/edoc_error/src" \
+    "${fixture_dir}/errors/edoc_error/src" \
+    "errors%edoc_error" \
+    "^my"
 
 # 2. Test that the comments in my_complete.erl are accurate.
 
