@@ -138,7 +138,7 @@ set +o pipefail
 # information about line numbers (which is only noise for us now).
 diff "${expected_file}" "${actual_file}" \
     | grep -v '^[0-9]' \
-    > "${result_dir}/my_complete-omnicomlete.diff"
+    > "${result_dir}/my_complete-omnicomplete.diff"
 
 set -o pipefail
 
