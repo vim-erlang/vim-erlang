@@ -117,6 +117,10 @@ done
     | sed 's/\(:[0-9][0-9]*:\)[0-9][0-9]*:/\1/' \
     > "${result_dir}/errors%compilation_error%compile%compilation_error" || true
 
+"${erlang_check}" \
+    "${fixture_dir}/errors/rebar_config_error/src/my_lib.erl" \
+    > "${result_dir}/errors%rebar_config_error%compile%my_lib" 2>&1 || true
+
 #-------------------------------------------------------------------------------
 # vim-erlang-omnicomplete
 #-------------------------------------------------------------------------------
