@@ -52,6 +52,12 @@ function test-vim-erlang-omnicomplete
         > "${result_dir}/${result_prefix}%list-modules" || true
 
     # Run "erlang_complete.erl list-functions <module>".
+    #
+    # grep2: The lines that contain @spec deprecation warning are filtered out.
+    # They are produced only when the Erlang/OTP version is at least 24. It is
+    # possible that users use Erlang/OTP 24 and still use some old code, so
+    # there would not be much point in complaining about @spec. Thus,
+    # `erlang_complete.vim` ignores these warnings.
     modules=$(find "${module_dir}" -type f -name '*.erl' |
               sed 's/^.*\/\([A-Za-z0-9_]*\)\.erl$/\1/g' |
               sort -u)
@@ -59,6 +65,7 @@ function test-vim-erlang-omnicomplete
         echo "    - list-functions for module ${module}"
         "$main_dir/vim-erlang-omnicomplete/autoload/erlang_complete.erl" \
             --basedir "${base_dir}" list-functions "${module}" \
+            | grep -v 'warning: EDoc @spec tags are deprecated. Please use -spec attributes instead.' \
             > "${result_dir}/${result_prefix}%list-functions%${module}" || true
     done
 }
@@ -165,10 +172,17 @@ set +o pipefail
 # Write the diff between the excepted and actual completion list into a diff
 # file.
 #
-# The lines starting with a number are filtered out because they print
-# information about line numbers (which is only noise for us now).
+# -   grep #1: The lines starting with a number are filtered out because they
+#     print information about line numbers (which is only noise for us now).
+#
+# -   grep #2: The lines that contain @spec deprecation warning are filtered
+#     out. They are produced only when the Erlang/OTP version is at least 24.
+#     It is possible that users use Erlang/OTP 24 and still use some old code,
+#     so there would not be much point in complaining about @spec. Thus,
+#     `erlang_complete.vim` ignores these warnings.
 diff "${expected_file}" "${actual_file}" \
     | grep -v '^[0-9]' \
+    | grep -v 'warning: EDoc @spec tags are deprecated. Please use -spec attributes instead.' \
     > "${result_dir}/my_complete-omnicomplete.diff"
 
 set -o pipefail
