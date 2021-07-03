@@ -1,0 +1,2 @@
+compilation_error.erl:5: syntax error before: error
+compilation_error.erl:2: function f/0 undefined

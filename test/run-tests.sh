@@ -91,6 +91,10 @@ function vim-erlang-tags
 
 echo "Testing vim-erlang-compiler..."
 
+erlang_check="$main_dir/vim-erlang-compiler/compiler/erlang_check.erl"
+
+# Test successful compilations.
+#
 # Compile every *.erl file.
 #
 # This includes the fixtures and the vim-erlang scripts.
@@ -98,8 +102,20 @@ echo "Testing vim-erlang-compiler..."
 for src_file in $(find "${fixture_dir}/rebar3_app" \
                        "${fixture_dir}/rebar3_release" \
                        -type f -name '*.erl'); do
-    "$main_dir/vim-erlang-compiler/compiler/erlang_check.erl" "${src_file}"
+    "${erlang_check}" "${src_file}"
 done
+
+# Test unsuccessful compilations.
+#
+# 1.  sed: Remove the absolute path to the module.
+#
+# 2.  sed: Remove the column numbers because that is avaliable only from
+#     Erlang/OTP 24.
+"${erlang_check}" \
+    "${fixture_dir}/errors/compilation_error/src/compilation_error.erl" \
+    | sed 's/^.*\(compilation_error.erl:\)/\1/' \
+    | sed 's/\(:[0-9][0-9]*:\)[0-9][0-9]*:/\1/' \
+    > "${result_dir}/errors%compilation_error%compile%compilation_error" || true
 
 #-------------------------------------------------------------------------------
 # vim-erlang-omnicomplete
