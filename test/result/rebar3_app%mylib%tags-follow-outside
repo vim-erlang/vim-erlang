@@ -1,0 +1,225 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted/
+#my_rec_erl	mylib/_build/default/lib/mylib/src/mylib_app.erl	/^-\s\*record\s\*(\?\s\*my_rec_erl\>/;"	r	file:
+#my_rec_erl	mylib/_build/default/lib/mylib/src/mylib_sup.erl	/^-\s\*record\s\*(\?\s\*my_rec_erl\>/;"	r	file:
+#my_rec_erl	mylib/src/mylib_app.erl	/^-\s\*record\s\*(\?\s\*my_rec_erl\>/;"	r	file:
+#my_rec_erl	mylib/src/mylib_sup.erl	/^-\s\*record\s\*(\?\s\*my_rec_erl\>/;"	r	file:
+#my_rec_hrl	mylib/_build/default/lib/mylib/src/mylib_app.hrl	/^-\s\*record\s\*(\?\s\*my_rec_hrl\>/;"	r
+#my_rec_hrl	mylib/src/mylib_app.hrl	/^-\s\*record\s\*(\?\s\*my_rec_hrl\>/;"	r
+?MY_MACRO_ERL	mylib/_build/default/lib/mylib/src/mylib_app.erl	/^-\s\*define\s\*(\?\s\*MY_MACRO_ERL\>/;"	d	file:
+?MY_MACRO_ERL	mylib/_build/default/lib/mylib/src/mylib_sup.erl	/^-\s\*define\s\*(\?\s\*MY_MACRO_ERL\>/;"	d	file:
+?MY_MACRO_ERL	mylib/src/mylib_app.erl	/^-\s\*define\s\*(\?\s\*MY_MACRO_ERL\>/;"	d	file:
+?MY_MACRO_ERL	mylib/src/mylib_sup.erl	/^-\s\*define\s\*(\?\s\*MY_MACRO_ERL\>/;"	d	file:
+?MY_MACRO_HRL	mylib/_build/default/lib/mylib/src/mylib_app.hrl	/^-\s\*define\s\*(\?\s\*MY_MACRO_HRL\>/;"	d
+?MY_MACRO_HRL	mylib/src/mylib_app.hrl	/^-\s\*define\s\*(\?\s\*MY_MACRO_HRL\>/;"	d
+?SERVER	mylib/_build/default/lib/mylib/src/mylib_sup.erl	/^-\s\*define\s\*(\?\s\*SERVER\>/;"	d	file:
+?SERVER	mylib/src/mylib_sup.erl	/^-\s\*define\s\*(\?\s\*SERVER\>/;"	d	file:
+MY_MACRO_ERL	mylib/_build/default/lib/mylib/src/mylib_app.erl	/^-\s\*define\s\*(\?\s\*MY_MACRO_ERL\>/;"	d	file:
+MY_MACRO_ERL	mylib/_build/default/lib/mylib/src/mylib_sup.erl	/^-\s\*define\s\*(\?\s\*MY_MACRO_ERL\>/;"	d	file:
+MY_MACRO_ERL	mylib/src/mylib_app.erl	/^-\s\*define\s\*(\?\s\*MY_MACRO_ERL\>/;"	d	file:
+MY_MACRO_ERL	mylib/src/mylib_sup.erl	/^-\s\*define\s\*(\?\s\*MY_MACRO_ERL\>/;"	d	file:
+MY_MACRO_HRL	mylib/_build/default/lib/mylib/src/mylib_app.hrl	/^-\s\*define\s\*(\?\s\*MY_MACRO_HRL\>/;"	d
+MY_MACRO_HRL	mylib/src/mylib_app.hrl	/^-\s\*define\s\*(\?\s\*MY_MACRO_HRL\>/;"	d
+SERVER	mylib/_build/default/lib/mylib/src/mylib_sup.erl	/^-\s\*define\s\*(\?\s\*SERVER\>/;"	d	file:
+SERVER	mylib/src/mylib_sup.erl	/^-\s\*define\s\*(\?\s\*SERVER\>/;"	d	file:
+a.hrl	mylib/_build/default/lib/mylib/include/a.hrl	1;"	F
+a.hrl	mylib/include/a.hrl	1;"	F
+b.hrl	mylib/_build/default/lib/mylib/src/b.hrl	1;"	F
+b.hrl	mylib/_build/default/lib/mylib/src/subdir/b.hrl	1;"	F
+b.hrl	mylib/src/b.hrl	1;"	F
+b.hrl	mylib/src/subdir/b.hrl	1;"	F
+complete_a1	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_a1\>/;"	f	file:
+complete_a1	mylib/src/my_complete.erl	/^complete_a1\>/;"	f	file:
+complete_a2	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_a2\>/;"	f	file:
+complete_a2	mylib/src/my_complete.erl	/^complete_a2\>/;"	f	file:
+complete_b1	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_b1\>/;"	f	file:
+complete_b1	mylib/src/my_complete.erl	/^complete_b1\>/;"	f	file:
+complete_b2	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_b2\>/;"	f	file:
+complete_b2	mylib/src/my_complete.erl	/^complete_b2\>/;"	f	file:
+complete_b3	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_b3\>/;"	f	file:
+complete_b3	mylib/src/my_complete.erl	/^complete_b3\>/;"	f	file:
+complete_b4	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_b4\>/;"	f	file:
+complete_b4	mylib/src/my_complete.erl	/^complete_b4\>/;"	f	file:
+complete_c1	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_c1\>/;"	f	file:
+complete_c1	mylib/src/my_complete.erl	/^complete_c1\>/;"	f	file:
+complete_c2	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_c2\>/;"	f	file:
+complete_c2	mylib/src/my_complete.erl	/^complete_c2\>/;"	f	file:
+complete_c3	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_c3\>/;"	f	file:
+complete_c3	mylib/src/my_complete.erl	/^complete_c3\>/;"	f	file:
+complete_d1	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_d1\>/;"	f	file:
+complete_d1	mylib/src/my_complete.erl	/^complete_d1\>/;"	f	file:
+complete_d2	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_d2\>/;"	f	file:
+complete_d2	mylib/src/my_complete.erl	/^complete_d2\>/;"	f	file:
+complete_d3	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_d3\>/;"	f	file:
+complete_d3	mylib/src/my_complete.erl	/^complete_d3\>/;"	f	file:
+complete_d4	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_d4\>/;"	f	file:
+complete_d4	mylib/src/my_complete.erl	/^complete_d4\>/;"	f	file:
+complete_e1	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_e1\>/;"	f	file:
+complete_e1	mylib/src/my_complete.erl	/^complete_e1\>/;"	f	file:
+complete_e2	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_e2\>/;"	f	file:
+complete_e2	mylib/src/my_complete.erl	/^complete_e2\>/;"	f	file:
+complete_e3	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_e3\>/;"	f	file:
+complete_e3	mylib/src/my_complete.erl	/^complete_e3\>/;"	f	file:
+complete_e4	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_e4\>/;"	f	file:
+complete_e4	mylib/src/my_complete.erl	/^complete_e4\>/;"	f	file:
+complete_f1	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_f1\>/;"	f	file:
+complete_f1	mylib/src/my_complete.erl	/^complete_f1\>/;"	f	file:
+complete_f2	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_f2\>/;"	f	file:
+complete_f2	mylib/src/my_complete.erl	/^complete_f2\>/;"	f	file:
+complete_f3	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_f3\>/;"	f	file:
+complete_f3	mylib/src/my_complete.erl	/^complete_f3\>/;"	f	file:
+complete_f4	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_f4\>/;"	f	file:
+complete_f4	mylib/src/my_complete.erl	/^complete_f4\>/;"	f	file:
+complete_g1	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_g1\>/;"	f	file:
+complete_g1	mylib/src/my_complete.erl	/^complete_g1\>/;"	f	file:
+complete_g2	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_g2\>/;"	f	file:
+complete_g2	mylib/src/my_complete.erl	/^complete_g2\>/;"	f	file:
+complete_g3	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_g3\>/;"	f	file:
+complete_g3	mylib/src/my_complete.erl	/^complete_g3\>/;"	f	file:
+complete_h1	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_h1\>/;"	f	file:
+complete_h1	mylib/src/my_complete.erl	/^complete_h1\>/;"	f	file:
+complete_h2	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_h2\>/;"	f	file:
+complete_h2	mylib/src/my_complete.erl	/^complete_h2\>/;"	f	file:
+complete_h3	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_h3\>/;"	f	file:
+complete_h3	mylib/src/my_complete.erl	/^complete_h3\>/;"	f	file:
+complete_h4	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_h4\>/;"	f	file:
+complete_h4	mylib/src/my_complete.erl	/^complete_h4\>/;"	f	file:
+complete_i1	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_i1\>/;"	f	file:
+complete_i1	mylib/src/my_complete.erl	/^complete_i1\>/;"	f	file:
+complete_i2	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_i2\>/;"	f	file:
+complete_i2	mylib/src/my_complete.erl	/^complete_i2\>/;"	f	file:
+complete_i3	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_i3\>/;"	f	file:
+complete_i3	mylib/src/my_complete.erl	/^complete_i3\>/;"	f	file:
+complete_i4	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_i4\>/;"	f	file:
+complete_i4	mylib/src/my_complete.erl	/^complete_i4\>/;"	f	file:
+complete_j1	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_j1\>/;"	f	file:
+complete_j1	mylib/src/my_complete.erl	/^complete_j1\>/;"	f	file:
+complete_j2	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_j2\>/;"	f	file:
+complete_j2	mylib/src/my_complete.erl	/^complete_j2\>/;"	f	file:
+f	mylib/_build/default/lib/mylib/src/mylib_app.erl	/^f\>/;"	f	file:
+f	mylib/_build/default/lib/mylib/src/mylib_sup.erl	/^f\>/;"	f	file:
+f	mylib/src/mylib_app.erl	/^f\>/;"	f	file:
+f	mylib/src/mylib_sup.erl	/^f\>/;"	f	file:
+init	mylib/_build/default/lib/mylib/src/mylib_sup.erl	/^init\>/;"	f	file:
+init	mylib/src/mylib_sup.erl	/^init\>/;"	f	file:
+my_complete	mylib/_build/default/lib/mylib/src/my_complete.erl	1;"	M
+my_complete	mylib/src/my_complete.erl	1;"	M
+my_complete.erl	mylib/_build/default/lib/mylib/src/my_complete.erl	1;"	F
+my_complete.erl	mylib/src/my_complete.erl	1;"	F
+my_complete:complete_a1	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_a1\>/;"	f
+my_complete:complete_a1	mylib/src/my_complete.erl	/^complete_a1\>/;"	f
+my_complete:complete_a2	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_a2\>/;"	f
+my_complete:complete_a2	mylib/src/my_complete.erl	/^complete_a2\>/;"	f
+my_complete:complete_b1	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_b1\>/;"	f
+my_complete:complete_b1	mylib/src/my_complete.erl	/^complete_b1\>/;"	f
+my_complete:complete_b2	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_b2\>/;"	f
+my_complete:complete_b2	mylib/src/my_complete.erl	/^complete_b2\>/;"	f
+my_complete:complete_b3	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_b3\>/;"	f
+my_complete:complete_b3	mylib/src/my_complete.erl	/^complete_b3\>/;"	f
+my_complete:complete_b4	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_b4\>/;"	f
+my_complete:complete_b4	mylib/src/my_complete.erl	/^complete_b4\>/;"	f
+my_complete:complete_c1	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_c1\>/;"	f
+my_complete:complete_c1	mylib/src/my_complete.erl	/^complete_c1\>/;"	f
+my_complete:complete_c2	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_c2\>/;"	f
+my_complete:complete_c2	mylib/src/my_complete.erl	/^complete_c2\>/;"	f
+my_complete:complete_c3	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_c3\>/;"	f
+my_complete:complete_c3	mylib/src/my_complete.erl	/^complete_c3\>/;"	f
+my_complete:complete_d1	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_d1\>/;"	f
+my_complete:complete_d1	mylib/src/my_complete.erl	/^complete_d1\>/;"	f
+my_complete:complete_d2	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_d2\>/;"	f
+my_complete:complete_d2	mylib/src/my_complete.erl	/^complete_d2\>/;"	f
+my_complete:complete_d3	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_d3\>/;"	f
+my_complete:complete_d3	mylib/src/my_complete.erl	/^complete_d3\>/;"	f
+my_complete:complete_d4	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_d4\>/;"	f
+my_complete:complete_d4	mylib/src/my_complete.erl	/^complete_d4\>/;"	f
+my_complete:complete_e1	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_e1\>/;"	f
+my_complete:complete_e1	mylib/src/my_complete.erl	/^complete_e1\>/;"	f
+my_complete:complete_e2	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_e2\>/;"	f
+my_complete:complete_e2	mylib/src/my_complete.erl	/^complete_e2\>/;"	f
+my_complete:complete_e3	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_e3\>/;"	f
+my_complete:complete_e3	mylib/src/my_complete.erl	/^complete_e3\>/;"	f
+my_complete:complete_e4	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_e4\>/;"	f
+my_complete:complete_e4	mylib/src/my_complete.erl	/^complete_e4\>/;"	f
+my_complete:complete_f1	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_f1\>/;"	f
+my_complete:complete_f1	mylib/src/my_complete.erl	/^complete_f1\>/;"	f
+my_complete:complete_f2	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_f2\>/;"	f
+my_complete:complete_f2	mylib/src/my_complete.erl	/^complete_f2\>/;"	f
+my_complete:complete_f3	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_f3\>/;"	f
+my_complete:complete_f3	mylib/src/my_complete.erl	/^complete_f3\>/;"	f
+my_complete:complete_f4	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_f4\>/;"	f
+my_complete:complete_f4	mylib/src/my_complete.erl	/^complete_f4\>/;"	f
+my_complete:complete_g1	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_g1\>/;"	f
+my_complete:complete_g1	mylib/src/my_complete.erl	/^complete_g1\>/;"	f
+my_complete:complete_g2	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_g2\>/;"	f
+my_complete:complete_g2	mylib/src/my_complete.erl	/^complete_g2\>/;"	f
+my_complete:complete_g3	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_g3\>/;"	f
+my_complete:complete_g3	mylib/src/my_complete.erl	/^complete_g3\>/;"	f
+my_complete:complete_h1	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_h1\>/;"	f
+my_complete:complete_h1	mylib/src/my_complete.erl	/^complete_h1\>/;"	f
+my_complete:complete_h2	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_h2\>/;"	f
+my_complete:complete_h2	mylib/src/my_complete.erl	/^complete_h2\>/;"	f
+my_complete:complete_h3	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_h3\>/;"	f
+my_complete:complete_h3	mylib/src/my_complete.erl	/^complete_h3\>/;"	f
+my_complete:complete_h4	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_h4\>/;"	f
+my_complete:complete_h4	mylib/src/my_complete.erl	/^complete_h4\>/;"	f
+my_complete:complete_i1	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_i1\>/;"	f
+my_complete:complete_i1	mylib/src/my_complete.erl	/^complete_i1\>/;"	f
+my_complete:complete_i2	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_i2\>/;"	f
+my_complete:complete_i2	mylib/src/my_complete.erl	/^complete_i2\>/;"	f
+my_complete:complete_i3	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_i3\>/;"	f
+my_complete:complete_i3	mylib/src/my_complete.erl	/^complete_i3\>/;"	f
+my_complete:complete_i4	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_i4\>/;"	f
+my_complete:complete_i4	mylib/src/my_complete.erl	/^complete_i4\>/;"	f
+my_complete:complete_j1	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_j1\>/;"	f
+my_complete:complete_j1	mylib/src/my_complete.erl	/^complete_j1\>/;"	f
+my_complete:complete_j2	mylib/_build/default/lib/mylib/src/my_complete.erl	/^complete_j2\>/;"	f
+my_complete:complete_j2	mylib/src/my_complete.erl	/^complete_j2\>/;"	f
+my_rec_erl	mylib/_build/default/lib/mylib/src/mylib_app.erl	/^-\s\*record\s\*(\?\s\*my_rec_erl\>/;"	r	file:
+my_rec_erl	mylib/_build/default/lib/mylib/src/mylib_app.erl	/^-\s\*type\s\*my_rec_erl\>/;"	t	file:
+my_rec_erl	mylib/_build/default/lib/mylib/src/mylib_sup.erl	/^-\s\*record\s\*(\?\s\*my_rec_erl\>/;"	r	file:
+my_rec_erl	mylib/_build/default/lib/mylib/src/mylib_sup.erl	/^-\s\*type\s\*my_rec_erl\>/;"	t	file:
+my_rec_erl	mylib/src/mylib_app.erl	/^-\s\*record\s\*(\?\s\*my_rec_erl\>/;"	r	file:
+my_rec_erl	mylib/src/mylib_app.erl	/^-\s\*type\s\*my_rec_erl\>/;"	t	file:
+my_rec_erl	mylib/src/mylib_sup.erl	/^-\s\*record\s\*(\?\s\*my_rec_erl\>/;"	r	file:
+my_rec_erl	mylib/src/mylib_sup.erl	/^-\s\*type\s\*my_rec_erl\>/;"	t	file:
+my_rec_hrl	mylib/_build/default/lib/mylib/src/mylib_app.hrl	/^-\s\*record\s\*(\?\s\*my_rec_hrl\>/;"	r
+my_rec_hrl	mylib/_build/default/lib/mylib/src/mylib_app.hrl	/^-\s\*type\s\*my_rec_hrl\>/;"	t	file:
+my_rec_hrl	mylib/src/mylib_app.hrl	/^-\s\*record\s\*(\?\s\*my_rec_hrl\>/;"	r
+my_rec_hrl	mylib/src/mylib_app.hrl	/^-\s\*type\s\*my_rec_hrl\>/;"	t	file:
+mylib_app	mylib/_build/default/lib/mylib/src/mylib_app.erl	1;"	M
+mylib_app	mylib/src/mylib_app.erl	1;"	M
+mylib_app.erl	mylib/_build/default/lib/mylib/src/mylib_app.erl	1;"	F
+mylib_app.erl	mylib/src/mylib_app.erl	1;"	F
+mylib_app.hrl	mylib/_build/default/lib/mylib/src/mylib_app.hrl	1;"	F
+mylib_app.hrl	mylib/src/mylib_app.hrl	1;"	F
+mylib_app:f	mylib/_build/default/lib/mylib/src/mylib_app.erl	/^f\>/;"	f
+mylib_app:f	mylib/src/mylib_app.erl	/^f\>/;"	f
+mylib_app:my_rec_erl	mylib/_build/default/lib/mylib/src/mylib_app.erl	/^-\s\*type\s\*my_rec_erl\>/;"	t
+mylib_app:my_rec_erl	mylib/src/mylib_app.erl	/^-\s\*type\s\*my_rec_erl\>/;"	t
+mylib_app:my_rec_hrl	mylib/_build/default/lib/mylib/src/mylib_app.hrl	/^-\s\*type\s\*my_rec_hrl\>/;"	t
+mylib_app:my_rec_hrl	mylib/src/mylib_app.hrl	/^-\s\*type\s\*my_rec_hrl\>/;"	t
+mylib_app:start	mylib/_build/default/lib/mylib/src/mylib_app.erl	/^start\>/;"	f
+mylib_app:start	mylib/src/mylib_app.erl	/^start\>/;"	f
+mylib_app:stop	mylib/_build/default/lib/mylib/src/mylib_app.erl	/^stop\>/;"	f
+mylib_app:stop	mylib/src/mylib_app.erl	/^stop\>/;"	f
+mylib_sup	mylib/_build/default/lib/mylib/src/mylib_sup.erl	1;"	M
+mylib_sup	mylib/src/mylib_sup.erl	1;"	M
+mylib_sup.erl	mylib/_build/default/lib/mylib/src/mylib_sup.erl	1;"	F
+mylib_sup.erl	mylib/src/mylib_sup.erl	1;"	F
+mylib_sup:f	mylib/_build/default/lib/mylib/src/mylib_sup.erl	/^f\>/;"	f
+mylib_sup:f	mylib/src/mylib_sup.erl	/^f\>/;"	f
+mylib_sup:init	mylib/_build/default/lib/mylib/src/mylib_sup.erl	/^init\>/;"	f
+mylib_sup:init	mylib/src/mylib_sup.erl	/^init\>/;"	f
+mylib_sup:my_rec_erl	mylib/_build/default/lib/mylib/src/mylib_sup.erl	/^-\s\*type\s\*my_rec_erl\>/;"	t
+mylib_sup:my_rec_erl	mylib/src/mylib_sup.erl	/^-\s\*type\s\*my_rec_erl\>/;"	t
+mylib_sup:start_link	mylib/_build/default/lib/mylib/src/mylib_sup.erl	/^start_link\>/;"	f
+mylib_sup:start_link	mylib/src/mylib_sup.erl	/^start_link\>/;"	f
+start	mylib/_build/default/lib/mylib/src/mylib_app.erl	/^start\>/;"	f	file:
+start	mylib/src/mylib_app.erl	/^start\>/;"	f	file:
+start_link	mylib/_build/default/lib/mylib/src/mylib_sup.erl	/^start_link\>/;"	f	file:
+start_link	mylib/src/mylib_sup.erl	/^start_link\>/;"	f	file:
+stop	mylib/_build/default/lib/mylib/src/mylib_app.erl	/^stop\>/;"	f	file:
+stop	mylib/src/mylib_app.erl	/^stop\>/;"	f	file:
+subdir_mod	mylib/_build/default/lib/mylib/src/subdir/subdir_mod.erl	1;"	M
+subdir_mod	mylib/src/subdir/subdir_mod.erl	1;"	M
+subdir_mod.erl	mylib/_build/default/lib/mylib/src/subdir/subdir_mod.erl	1;"	F
+subdir_mod.erl	mylib/src/subdir/subdir_mod.erl	1;"	F

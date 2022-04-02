@@ -240,3 +240,13 @@ echo "Testing vim-erlang-tags..."
 (cd "${fixture_dir}/rebar3_release/myapp"
  vim-erlang-tags --ignore _build
  mv tags "${result_dir}/rebar3_release%myapp%tags")
+
+# Test a rebar with the _build directory.
+
+(cd "${fixture_dir}/rebar3_app/mylib"
+ vim-erlang-tags --follow
+ mv tags "${result_dir}/rebar3_app%mylib%tags-follow")
+
+(cd "${fixture_dir}/rebar3_app"
+ vim-erlang-tags --follow mylib
+ mv tags "${result_dir}/rebar3_app%mylib%tags-follow-outside")
