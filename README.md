@@ -7,13 +7,12 @@ repositories.
 
 * [Tests](#tests)
 * [FAQ](#faq)
+    * [Which repositories are maintained?](#Which-repositories-are-maintained)
     * [Why is no proper test framework used?](#Why-is-no-proper-test-framework-used)
 * [Contributing](#contributing)
     * [Markdown conventions](#markdown-conventions)
     * [Vimscript coding conventions](#vimscript-coding-conventions)
     * [Erlang coding conventions](#erlang-coding-conventions)
-
-### Which repositories are maintained?
 
 ## Tests
 
@@ -46,7 +45,6 @@ The following vim-erlang repositories are maintained:
 - [vim-erlang-compiler](https://github.com/vim-erlang/vim-erlang-compiler)
 - [vim-erlang-omnicomplete](https://github.com/vim-erlang/vim-erlang-omnicomplete)
 - [vim-erlang-tags](https://github.com/vim-erlang/vim-erlang-tags)
-
 
 ### Why is no proper test framework used?
 
